@@ -47,4 +47,4 @@ const getToken = async () => {
 						}
 						},
 						]);
-						sonicx.listen(4000, () => console.log("Listening on 4000"));
+						sonicx.listen(process.env.PORT || 4000, () => console.log("Listening on 4000"));
